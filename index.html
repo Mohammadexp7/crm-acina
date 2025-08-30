@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>داشبورد فروش آوینا</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#4D7CFE',
+              'primary-light': 'rgba(77, 124, 254, 0.1)',
+              'secondary': '#3DCD9A',
+              'background': '#F7F8FA',
+              'text-dark': '#23272E',
+              'text-light': '#8A92A6',
+              'border-color': '#E5E7EB',
+              'status-active-bg': '#E1F7EF',
+              'status-active-text': '#3DCD9A',
+              'status-pending-bg': '#FFF4DE',
+              'status-pending-text': '#FF9900',
+            },
+            fontFamily: {
+                sans: ['IRANSans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/irsans-font/dist/font-face.css">
+    <style>
+      body {
+        font-family: 'IRANSans', sans-serif;
+        background-color: #F7F8FA;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.js"></script>
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2"
+  }
+}
+</script>
+</head>
+  <body class="bg-background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
