@@ -16,9 +16,9 @@ const CustomerSatisfactionChart: React.FC = () => {
             <div style={{ width: '100%', height: 200 }} dir="ltr">
                 <ResponsiveContainer>
                     <LineChart data={data} margin={{ top: 5, right: 0, left: 0, bottom: 5 }}>
-                        <XAxis dataKey="name" tick={{ fontSize: 12, fontFamily: 'Vazirmatn' }} stroke="#8A92A6" axisLine={false} tickLine={false} />
-                        <YAxis tick={{ fontSize: 12, fontFamily: 'Vazirmatn' }} stroke="#8A92A6" axisLine={false} tickLine={false} domain={[0, 100]} />
-                        <Legend wrapperStyle={{ fontFamily: 'Vazirmatn', fontSize: '14px', direction: 'rtl', paddingTop: '20px' }} 
+                        <XAxis dataKey="name" tick={{ fontSize: 12, fontFamily: 'IRANSans' }} stroke="#8A92A6" axisLine={false} tickLine={false} />
+                        <YAxis tick={{ fontSize: 12, fontFamily: 'IRANSans' }} stroke="#8A92A6" axisLine={false} tickLine={false} domain={[0, 100]} />
+                        <Legend wrapperStyle={{ fontFamily: 'IRANSans', fontSize: '14px', direction: 'rtl', paddingTop: '20px' }} 
                             formatter={(value) => <span className="text-text-light">{value === 'lastMonth' ? 'ماه گذشته' : 'این ماه'}</span>}
                         />
                         <Line type="monotone" dataKey="lastMonth" stroke="#4D7CFE" strokeWidth={3} dot={false} />

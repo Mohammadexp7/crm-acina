@@ -34,7 +34,7 @@ const Header: React.FC = () => {
             src="https://picsum.photos/100"
             alt="آواتار کاربر"
           />
-          <span className="hidden lg:inline font-semibold text-text-dark">سارا احمدی</span>
+          <span className="hidden lg:inline font-semibold text-text-dark">محمد امینی</span>
           <ChevronDownIcon className="w-5 h-5 text-text-light" />
         </div>
       </div>

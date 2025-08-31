@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import DashboardIcon from './icons/DashboardIcon';
 import AnalyticsIcon from './icons/AnalyticsIcon';
 import OrderIcon from './OrderIcon';
@@ -30,8 +30,12 @@ const helpNavItems = [
   { name: 'پشتیبانی', icon: SupportIcon },
 ];
 
-const Sidebar: React.FC = () => {
-  const [activeItem, setActiveItem] = useState('داشبورد');
+interface SidebarProps {
+    activeItem: string;
+    setActiveItem: (item: string) => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ activeItem, setActiveItem }) => {
 
   const NavLink: React.FC<{item: {name: string, icon: React.ComponentType<any>}}> = ({ item }) => {
     const isActive = activeItem === item.name;

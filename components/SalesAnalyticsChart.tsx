@@ -40,10 +40,10 @@ const SalesAnalyticsChart: React.FC = () => {
                 <ResponsiveContainer>
                     <BarChart data={data} margin={{ top: 5, right: 0, left: 0, bottom: 5 }} barSize={10}>
                         <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                        <XAxis dataKey="name" tick={{ fontSize: 12, fontFamily: 'Vazirmatn' }} stroke="#8A92A6" axisLine={false} tickLine={false} />
-                        <YAxis tickFormatter={(value) => `${value/1000}k`} tick={{ fontSize: 12, fontFamily: 'Vazirmatn' }} stroke="#8A92A6" axisLine={false} tickLine={false} />
+                        <XAxis dataKey="name" tick={{ fontSize: 12, fontFamily: 'IRANSans' }} stroke="#8A92A6" axisLine={false} tickLine={false} />
+                        <YAxis tickFormatter={(value) => `${value/1000}k`} tick={{ fontSize: 12, fontFamily: 'IRANSans' }} stroke="#8A92A6" axisLine={false} tickLine={false} />
                         <Tooltip content={<CustomTooltip />} cursor={{fill: 'rgba(77, 124, 254, 0.1)'}} />
-                        <Legend wrapperStyle={{ fontFamily: 'Vazirmatn', fontSize: '14px', direction: 'rtl' }}
+                        <Legend wrapperStyle={{ fontFamily: 'IRANSans', fontSize: '14px', direction: 'rtl' }}
                             formatter={(value) => <span className="text-text-light">{value === 'revenue' ? 'درآمد' : 'سفارش'}</span>}
                         />
                         <Bar dataKey="revenue" fill="#4D7CFE" radius={[10, 10, 0, 0]} />

@@ -41,6 +41,21 @@ export interface CustomerSatisfactionData {
     thisMonth: number;
 }
 
+export interface TrafficSourceData {
+    name: string;
+    value: number;
+    color: string;
+}
+
+export interface TopPageData {
+    id: number;
+    path: string;
+    views: number;
+    uniqueVisitors: number;
+    bounceRate: string;
+}
+
+
 // FIX: Add CampaignStatus enum to resolve import error in CampaignsTable.tsx
 export enum CampaignStatus {
   Completed = 'تکمیل شده',

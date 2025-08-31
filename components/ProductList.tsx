@@ -63,7 +63,7 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
                 </td>
                 <td className="px-4 py-4 whitespace-nowrap text-sm text-text-light">{product.type}</td>
                 <td className="px-4 py-4 whitespace-nowrap text-sm text-text-light">{product.brand}</td>
-                <td className="px-4 py-4 whitespace-nowrap text-sm font-semibold text-text-dark">${product.price.toLocaleString()}</td>
+                <td className="px-4 py-4 whitespace-nowrap text-sm font-semibold text-text-dark">{product.price.toLocaleString('fa-IR')} تومان</td>
                 <td className="px-4 py-4 whitespace-nowrap">
                   <StatusBadge status={product.status} />
                 </td>
