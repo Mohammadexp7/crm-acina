@@ -10,5 +10,7 @@ export default {
       // correctly over HTTPS, which Replit uses for the preview window.
       clientPort: 443,
     },
+    // FIX: Allow requests from Replit's preview host
+    allowedHosts: ['.replit.dev'],
   },
 };
