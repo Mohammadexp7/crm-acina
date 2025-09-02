@@ -15,9 +15,9 @@ const KpiCard: React.FC<KpiData> = ({ title, value, trend, positiveTrend, icon: 
         <div className="bg-white p-6 rounded-xl shadow-sm flex items-start justify-between">
             <div className="flex flex-col">
                 <p className="text-sm text-text-light">{title}</p>
-                <p className="text-3xl font-bold text-text-dark mt-2 flex items-baseline">
+                <p className="text-2xl sm:text-3xl font-bold text-text-dark mt-2 flex items-baseline">
                     {value}
-                    {isRevenue && <span className="text-2xl font-medium mr-1.5">تومان</span>}
+                    {isRevenue && <span className="text-xl sm:text-2xl font-medium mr-1.5">تومان</span>}
                 </p>
                 <div className={`mt-2 flex items-center text-sm font-semibold ${trendColor}`}>
                     <TrendIcon />

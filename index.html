@@ -26,6 +26,15 @@
             fontFamily: {
                 sans: ['IRANSans', 'sans-serif'],
             },
+            animation: {
+              'slide-in-up': 'slide-in-up 0.5s ease-out forwards',
+            },
+            keyframes: {
+              'slide-in-up': {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+            },
           }
         }
       }
@@ -35,6 +44,21 @@
       body {
         font-family: 'IRANSans', sans-serif;
         background-color: #F7F8FA;
+      }
+      /* Custom Scrollbar Styles */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d1d5db;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #9ca3af;
       }
     </style>
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -46,7 +70,8 @@
     "react": "https://aistudiocdn.com/react@^19.1.1",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
     "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "recharts": "https://aistudiocdn.com/recharts@^3.1.2"
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0"
   }
 }
 </script>
